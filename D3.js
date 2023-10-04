@@ -180,7 +180,7 @@ for (let i = 0 ; i < starWarsCharacters.length ; i++) {
 switch (eyeColorObj.eye_color){
   case "blue":
       eyeColor.blue.push(eyeColorObj)
-  break;
+    break;
   case "yellow":
     eyeColor.yellow.push(eyeColorObj)
     break;
@@ -192,6 +192,8 @@ switch (eyeColorObj.eye_color){
     break;
   case "blue-gray":
     eyeColor.blue_gray.push(eyeColorObj)
+    break;
+  default:
     break;
 }
 }
