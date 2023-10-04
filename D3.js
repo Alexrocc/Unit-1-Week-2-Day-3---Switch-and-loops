@@ -252,13 +252,10 @@ for (let i = 0 ; i < starWarsCharacters.length ; i++) {
     gender: starWarsCharacters[i].gender
   };
 
-  if (gender.gender === "n/a"){
-    newGender[gender] = "robot"
-    genderChange.push(newGender)
-  } else {
-    genderChange.push(newGender)
-    continue
+  if (newGender.gender === "n/a"){
+    newGender.gender = "robot"
   }
+  genderChange.push(newGender)
 }
 console.log(genderChange)
 
